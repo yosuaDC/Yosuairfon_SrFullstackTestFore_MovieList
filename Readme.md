@@ -33,7 +33,6 @@ npm run dev
 
 **Architecture Overview
 
-Backend as BFF (Backend For Frontend)
 All TMDB requests go through backend to:
 
 
