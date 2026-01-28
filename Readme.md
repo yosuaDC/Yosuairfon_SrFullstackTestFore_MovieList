@@ -31,3 +31,42 @@ npm run dev
 
 
 
+**Architecture Overview
+
+Backend as BFF (Backend For Frontend)
+All TMDB requests go through backend to:
+
+
+Normalize API responses
+
+Centralize error handling
+
+Service Layer
+
+tmdb.service.ts handles all communication with TMDB
+
+Controller Layer
+
+Controllers handle HTTP requests & responses only
+
+Frontend
+-List movie
+-Detail pages
+-Responsive design
+-Tailwind css 
+
+
+
+
+**Trade-offs & Decisions
+
+Axios over Fetch API
+→ cleaner API layer and easier error handling
+
+Tailwind CSS
+→ fast iteration, scalable UI, no fragile custom CSS
+
+No authentication layer
+→ intentionally out of scope for this assignment
+
+
